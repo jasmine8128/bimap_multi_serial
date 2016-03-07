@@ -173,7 +173,7 @@ void index_bitmap()//index attribute from bitmap
     }
     for(int i=0;i<3;i++)//address of the attribute
     {
-        for(int j=0;j<32;j++)
+        for(int j=0;j<31;j++)
         {
             if(bits[i][j]=='1')
             {

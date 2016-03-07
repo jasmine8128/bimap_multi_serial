@@ -113,8 +113,8 @@ if __name__ == '__main__':
 		fill_0_word = produce_0_fill(head, scanned_chunk_id)#step 4
 		out_index = getIdx(fill_0_word,scanned_literal)#step 5
 		for i in out_index:
-			print bin(i)
-			file_ob.writelines(bin(i)+'\n')
+			print i #print bin(i)
+			file_ob.writelines(str(i)+'\n')
 		key_idx_length,offset = get_idxlen_offset(fill_0_word,scanned_input_data)
 		print key_idx_length
 		file_ob.write(str(key_idx_length)+'\n')
